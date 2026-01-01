@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #ffffff;
+  color: #333;
+  
+}
+/*-------Menu section start------*/
+.menu-container {
+  width: 100%;
+  height: 80px;
+  background: #0043af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0px 50px;
+  position: fixed;
+  z-index: 1000;
+  
+}
+.logo{
+  width: 20%;
+  height: 80px;
+  background: transparent;
+  float: left;
+  display: flex;
+}
+.logo i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #0043af;
+    background:#ffffff;
+    margin: 15px 5px;
+    font-size: 20px;
+}
+.logo h2{
+    color: #ffffff;
+    line-height: 80px;
+    font-size: 27px;
+}
+.menu-item {
+  width: 60%;
+  height: 80px;
+}
+.menu-item ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;          /* 🔥 same gap এখানে */
+  align-items: center;
+  height: 80px;
+}
+
+.menu-item ul li {
+  line-height: 80px;
+  text-align: center;
+  position: relative;
+}
+.menu-item ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+.menu-item ul li.active2 .nav-text {
+  text-decoration: underline #ffffff;
+  text-underline-offset: 6px;
+}
+.menu-item ul li:hover .nav-text {
+  text-decoration: underline #ffffff;
+  text-underline-offset: 6px;
+}
+.menu-item ul li:hover > a {
+  color: #ffffff;
+}
+.menu-button{
+  padding-right: 20px;
+}
+.menu-button button{
+  background-color: #ffffff;
+  color: #0043af;
+  margin: 5px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #0062ff;
+  transition: 1s;
+}
+.menu-button button:hover{
+  background-color: #bdbdbd;
+  cursor: pointer;
+}
+/*-------Menu section end------*/
+/*Mobile menu*/
+.menu-icon2 {
+  display: none;
+}
+.menu-icon2 i{
+  float: right;
+  color: #ffffff;
+  line-height: 80px;
+  padding: 0px 20px;
+  font-size: 25px;
+  display: none;
+}
+.mobile-menu{
+  width: 100%;
+  height: auto;
+  background: #f3f5ff;
+  position: fixed;
+  top: 90px;
+  z-index: 1000;
+}
+.mobile-menu ul li{
+  font-size: 18px;
+  line-height: 60px;
+}
+.mobile-menu ul li a{
+  text-decoration: none;
+  color: #0043af;
+  padding-left: 40px;
+}
+
+/*Mobile menu*/
+/*------Hero section-------*/
+.hero-container{
+  height: 850px;
+  width: 100%;
+  background-color: #f3f5ff;
+}
+.hero-content h1{
+  text-align: center;
+  padding-top: 150px;
+  font-size: 31px;
+  color: #0043af;
+}
+.hero-content p{
+  text-align: center;
+  font-size: 19px;
+  padding-top: 5px;
+  color: #2b4055;
+}
+
+.search-box {
+  display: block;
+  width: 650px;
+  max-width: 90%;           /* responsive */
+  height: 50px;
+  margin: 20px auto;        /* horizontally center */
+  padding-left: 45px;       /* icon space */
+  border-radius: 30px;
+  font-size: 15px;
+  text-align: left;
+  border: 2px solid #0043af;
+  outline: none;
+
+  /* icon inside input */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 15px center; /* icon fixed from left */
+}
+
+
+
+.how-it-work{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 80px;
+}
+.w-card{
+  width: 205px;
+  height: 330px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+.w-card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0px 0px;
+}
+.w-card h2{
+  text-align: center;
+  color: #0043af;
+  padding-top:5 20px;
+}
+.w-card p{
+  text-align: center;
+  color:#2b4055 ;
+  padding-top: 5px;
+}
+
+.w-card:hover{
+  transform: scale(1.1);
+}
+/*------Hero section-------*/
+
+
+
+/*------Find doctor section Start-------*/
+.find-container{
+  width: 100%;
+  height: auto;
+  background-color: #dddddd;
+}
+
+.find-container h2{
+  font-size: 28px;
+  text-align: left;
+  color: #0043af;
+  padding-top: 40px;
+  padding-left: 80px;
+}
+.find-container p{
+  text-align: left;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 80px;
+  color: #2b4055;
+}
+
+.find-content{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 80px;
+}
+.dis-card{
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
+}
+.dis-card img{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  
+  border-radius: 50%;
+  background-color: #2b4055;
+}
+/*------Find doctor section End-------*/
+
+
+
+
+/*------Hero section-------*/
+.specialization-section {
+  padding: 60px 5%;
+  background: #eeeeee;
+  text-align: center;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: #222;
+}
+
+.view-all-btn {
+  padding: 10px 22px;
+  background: #eeeeee;
+  color: #0043af;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  transform:scale(1.1) ;
+  text-decoration: underline;
+}
+.spec-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.spec-card {
+  background: #eeeeee;
+  border-radius: 14px;
+  padding: 25px 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.spec-card:hover {
+  transform: translateY(-8px);
+}
+
+.spec-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.spec-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.spec-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #0b6efd;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.spec-btn:hover {
+  background: #084298;
+}
+/*------Hero section-------*/
+
+
+
+/*------Hero section-------*/
+/*------Hero section-------*/
+
+
+
+
+/*------Hero section-------*/
+/*------Hero section-------*/
+
+
+
+/*------Hero section-------*/
+/*------Hero section-------*/
+
+
+
+
+
+/*------Hero section-------*/
+/*------Hero section-------*/
+
+
+
+
+
+/*------Hero section-------*/
+/*------Hero section-------*/

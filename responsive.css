@@ -1,0 +1,125 @@
+@media screen and (max-width:1064px){
+    .menu-container{
+      width: 100%;
+      height: 80px;
+      background: #0043af;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+    }
+  .logo{
+  width: 20%;
+  height: 80px;
+  background: transparent;
+  float: left;
+  display: flex;
+}
+  .logo i{
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #135bcf;
+    background:#ffffff;
+    margin: 13px 5px;
+    font-size: 18px;
+    padding: 15px;
+}
+  .logo h2{
+    color: #ffffff;
+    line-height: 80px;
+    font-size: 25px;
+}
+  .menu-item{
+        display: none;
+  }
+  .menu-button{
+    padding-right: 25px;
+  }
+  .menu-button button{
+  margin: 5px;
+  padding: 10px;
+  font-size: 15px;
+  }
+  .menu-icon2{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        height: 80px;
+  }
+  .menu-icon2 i{
+        display: inline-block;
+        line-height: 80px;
+        font-size: 25px;
+        color: #ffffff;
+        padding-right: 25px;
+    }
+     .menu-icon2 .mobile-show{
+        display: inline-block;
+    }
+
+    /* cross icon hide */
+    .menu-icon2 .mobile-hide{
+        display: none;
+    }
+
+
+
+.hero-container{
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.hero-content h1{
+  text-align: center;
+  font-size: 24px;
+}
+.hero-content p{
+  text-align: center;
+  font-size: 15px;
+}
+
+.search-box {
+    width: 90%;
+    padding-left: 40px;       /* proportional to width */
+    background-position: 10px center; /* icon adjust */
+    font-size: 14px;
+  }
+
+
+  .how-it-work{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 80px;
+}
+.w-card{
+  width: 280px;
+  height: 350px;
+  background-color: #ececec;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.w-card img{
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0px 0px;
+}
+.w-card h2{
+  text-align: center;
+  color: #0043af;
+  padding-top:5 20px;
+}
+.w-card p{
+  text-align: center;
+  color:#2b4055 ;
+  padding-top: 5px;
+}
+
+}
